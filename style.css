@@ -78,6 +78,55 @@ p{
 .hero-section i{
     color: white;
 }
+/* ============================
+products area css
+============================ */
+.product-section{
+    margin-top: 20px;
+}
+.product-title{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+.pink{
+    color: #E02C6D;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.product{
+    box-shadow: 10px 10px 30px lightgray;
+    margin: 30px;
+    padding: 15px;
+    align-items: center;
+}
+.product-details{
+    font-size: 14px;
+}
+.product img{
+    width: 300px;
+    height: 256px;
+}
+.product-button{
+    text-align: right;
+    color: #E02C6D;
+}
+.product-button a{
+    text-decoration: none;
+    color: #E02C6D;
+}
+
+/* ======================
+top part Animation style
+====================== */
+.typewriter h1 {
+    font-size: 35px;
+    overflow: hidden; 
+    white-space: nowrap; 
+    animation: typing 5s infinite;
+  }
 /* ======================
 top part Animation style
 ====================== */
@@ -134,12 +183,21 @@ top part Animation style
             width: 350px;
             height: 350px;
         }
+        .products{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            justify-content: space-evenly;
+        }
+        .product{
+            margin: 20px 50px;
+        }
     }
 
     /* ====================
   Tablets
   ==================== */
-  @media (max-width: 768px){
+
+  @media only screen and (min-width: 481px){
     .hero-section{
         flex-direction: column;
         flex-direction: column-reverse;
@@ -148,12 +206,23 @@ top part Animation style
     }
     .navigation{
         display: flex;
-        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+    }
+    p{
+        line-height: 23px;
+        margin-bottom: 15px;
+        font-size: 18px;
+        margin-left: 40px;
     }
     #main-camera{
         width: 440px;
         height: 414px;
         margin-left: 20%;
+    }
+    .typewriter h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        margin-left: 30px;
     }
     .influencer-intro{
         text-align: center;
@@ -161,5 +230,14 @@ top part Animation style
     .preebook-now{
         margin-left: 35%;
 
+    }
+    .products{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .product{
+        margin: 25px;
     }
   }
