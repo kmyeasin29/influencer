@@ -229,9 +229,9 @@ Footer section
 
   @media (max-width: 480px){
     .navigation{
-    flex-direction: column;
-    align-content: space-around;
-}
+        display: flex;
+        flex-direction: column;
+    }
     .hero-section{
         flex-direction: column;
         flex-direction: column-reverse;
